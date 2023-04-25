@@ -2,6 +2,35 @@
 <html>
     <head>
         <title>Contact Us</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Roboto Slab', serif;
+            }
+            label{
+                color: red;
+                font-size: large;
+            }
+            input{
+                width: 180px;
+                height: 20px;
+                border-radius: 10px;
+                border: 1px solid rgb(195, 139, 66);
+                color: black;
+            }
+            input[type="text"]{
+                text-transform: capitalize;
+            }  
+            #submit:hover{
+                background-color: rgb(123, 71, 71);
+            } 
+            button[type="reset"]:hover{
+                    color: aqua;
+            }
+             
+        </style>
     </head>
     <body>
         <h2>Contact Us</h2>
@@ -24,7 +53,7 @@
                     <td><textarea rows="5" cols="20"></textarea></td>
                 </tr>
                 <tr>
-                    <td><button type="submit">Submit</button></td>
+                    <td><button type="submit" id="submit">Submit</button></td>
                     <td><button type="reset">clear</button></td>
                 </tr>
             </table>
